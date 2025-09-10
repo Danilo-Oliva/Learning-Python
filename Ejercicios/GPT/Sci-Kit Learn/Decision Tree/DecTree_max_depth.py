@@ -22,10 +22,12 @@ modelo_profundo.fit(x_train, y_train)
 pred_profundo = modelo_profundo.predict(x_test)
 print("Precisión (árbol profundo): ", accuracy_score(y_test, pred_profundo))
 
-plt.figure(figsize=(10,6))
-plot_tree(modelo_simple, feature_names=["Edad", "Peso"], class_names=["No", "Sí"], filled=True)
-plt.show()
+def showModeloSimple():
+  plt.figure(figsize=(10,6))
+  plot_tree(modelo_simple, feature_names=["Edad", "Peso"], class_names=["No", "Sí"], filled=True)
+  plt.show()
 
-plt.figure(figsize=(10,6))
-plot_tree(modelo_profundo, feature_names=["Edad", "Peso"], class_names=["No", "Sí"], filled=True)
-plt.show()
+def showModeloProfundo():
+  plt.figure(figsize=(10,6))
+  plot_tree(modelo_profundo, feature_names=["Edad", "Peso"], class_names=["No", "Sí"], filled=True)
+  plt.show()
