@@ -1,0 +1,16 @@
+# Archivos compilados
+__pycache__/
+*.pyc
+*.pyo
+
+# Entornos virtuales
+venv/
+env/
+
+# Configuración personal
+.vscode/
+*.env
+
+# Archivos de datos temporales
+*.csv
+*.xlsx
